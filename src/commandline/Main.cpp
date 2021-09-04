@@ -76,8 +76,7 @@ public:
         
         player = std::make_unique<Player>(player_identifier,
                                           audio_thumbnail_cache,
-                                          audio_format_manager,
-                                          &time_sliced_thread);
+                                          audio_format_manager);
         
         audio_source_player.setSource(player.get());
         audio_device_manager.addAudioCallback(&audio_source_player);
@@ -146,7 +145,6 @@ private:
     
     juce::AudioThumbnailCache audio_thumbnail_cache{1024};
     juce::AudioFormatManager audio_format_manager;
-    juce::TimeSliceThread time_sliced_thread{"Soundboard IO"};
     
     juce::Identifier player_identifier{"1"};
     std::unique_ptr<Player> player;
