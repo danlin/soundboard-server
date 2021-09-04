@@ -18,7 +18,6 @@ public:
     {
         juce::ignoreUnused(commandLine);
         LoggingUtilities::Info("Initialise Soundboard");
-        time_sliced_thread.startThread();
         
         app.addHelpCommand ("help|h", "Usage:", true);
         app.addVersionCommand ("version|v", "Soundboard Server 1.0.0");
