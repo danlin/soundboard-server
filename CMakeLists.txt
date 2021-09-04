@@ -22,4 +22,5 @@ add_subdirectory(src/commandline Commandline)
 add_subdirectory(src/plugin Plugin)
 
 
-
+install(TARGETS Commandline RUNTIME)
+install(TARGETS Plugin RUNTIME)
