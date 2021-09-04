@@ -4,8 +4,6 @@
 #include <juce_audio_utils/juce_audio_utils.h>
 #include <ultraschall_audio/ultraschall_audio.h>
 
-#include "../store/Store.h"
-
 class PlayerView : public juce::Component {
 public:
     explicit PlayerView(juce::AudioThumbnail &audioThumbnail) : playerThumbnailView(audioThumbnail) {
