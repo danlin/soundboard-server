@@ -15,7 +15,7 @@
   website:            https://ultraschall.fm
   license:            MIT
 
-  dependencies:       juce_core, juce_events
+  dependencies:       juce_core, juce_events, juce_graphics
 
  END_JUCE_MODULE_DECLARATION
 
